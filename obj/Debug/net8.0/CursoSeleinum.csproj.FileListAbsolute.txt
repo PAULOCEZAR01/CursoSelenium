@@ -101,3 +101,5 @@ C:\Users\PauloCezarSilvaVicen\source\repos\CursoSeleinum\obj\Debug\net8.0\refint
 C:\Users\PauloCezarSilvaVicen\source\repos\CursoSeleinum\obj\Debug\net8.0\CursoSeleinum.pdb
 C:\Users\PauloCezarSilvaVicen\source\repos\CursoSeleinum\obj\Debug\net8.0\CursoSeleinum.genruntimeconfig.cache
 C:\Users\PauloCezarSilvaVicen\source\repos\CursoSeleinum\obj\Debug\net8.0\ref\CursoSeleinum.dll
+C:\Users\PauloCezarSilvaVicen\source\repos\CursoSeleinum\obj\Debug\net8.0\CursoSeleinum.sourcelink.json
+C:\Users\PauloCezarSilvaVicen\source\repos\CursoSeleinum\bin\Debug\net8.0\SeleniumExtras.WaitHelpers.dll

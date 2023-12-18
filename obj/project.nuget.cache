@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "WAsMnCVQinWZHScHyZxuY8pxEIGuq6mC+rtzD352a3hhAD3WnsdqXfjxHOUXkXOVuguN3TF0k04ALkTOu6BTKw==",
+  "dgSpecHash": "AXYeUOa5Kt/alRjIG1T4nsaHTeUfxfJAPwpU4fmBTLyENmAmAucG4kJoLaSQX6kUHKG866L+BREd0gDgHt2HJw==",
   "success": true,
   "projectFilePath": "C:\\Users\\PauloCezarSilvaVicen\\source\\repos\\CursoSeleinum\\CursoSeleinum.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\PauloCezarSilvaVicen\\.nuget\\packages\\coverlet.collector\\6.0.0\\coverlet.collector.6.0.0.nupkg.sha512",
+    "C:\\Users\\PauloCezarSilvaVicen\\.nuget\\packages\\dotnetseleniumextras.waithelpers\\3.11.0\\dotnetseleniumextras.waithelpers.3.11.0.nupkg.sha512",
     "C:\\Users\\PauloCezarSilvaVicen\\.nuget\\packages\\microsoft.codecoverage\\17.6.0\\microsoft.codecoverage.17.6.0.nupkg.sha512",
     "C:\\Users\\PauloCezarSilvaVicen\\.nuget\\packages\\microsoft.net.test.sdk\\17.6.0\\microsoft.net.test.sdk.17.6.0.nupkg.sha512",
     "C:\\Users\\PauloCezarSilvaVicen\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",

@@ -2,6 +2,8 @@ using System.Text;
 using NUnit.Framework;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Firefox;
+using OpenQA.Selenium.Support.UI;
+using SeleniumExtras.WaitHelpers;
 
 namespace CursoSeleinum.ST01Contato;
 
@@ -9,17 +11,20 @@ namespace CursoSeleinum.ST01Contato;
 public class CT01ValidarLayoutTela
 {
     private IWebDriver driver;
+    private WebDriverWait webDriverWait;
     private StringBuilder verificationErrors;
-    private string baseURL;
     private bool acceptNextAlert = true;
+    private readonly string baseURL = "https://livros.inoveteste.com.br/";
 
     [SetUp]
     public void SetupTest()
     {
         driver = new FirefoxDriver();
         driver.Manage().Window.Maximize();
+        driver.Navigate().GoToUrl(baseURL);
 
-        baseURL = "https://livros.inoveteste.com.br/";
+        webDriverWait = new(driver, TimeSpan.FromSeconds(15));
+
         verificationErrors = new StringBuilder();
     }
 
@@ -28,9 +33,9 @@ public class CT01ValidarLayoutTela
     {
         try
         {
-            driver.Quit();
+            driver.Quit();  
         }
-        catch (Exception)
+        catch (Exception)   
         {
             // Ignore errors if unable to close the browser
         }
@@ -40,12 +45,16 @@ public class CT01ValidarLayoutTela
     [Test]
     public void TheCT01ValidarLayoutTelaTest()
     {
-        // Acessa o site
-        driver.Navigate().GoToUrl(baseURL + "/");
         // Acessa o menu Contato
+        /*
         driver.FindElement(By.CssSelector("em.fa.fa-bars")).Click();
         driver.FindElement(By.CssSelector("div.sidr-inner > #nav-wrap > #primary_menu > #menu-item-80 > a > span")).Click();
-        // Valida o layout da tela
+        */
+
+        webDriverWait.Until(ExpectedConditions.InvisibilityOfElementLocated(By.CssSelector(".lp-screen")));
+        driver.FindElement(By.CssSelector("#menu-item-80 a")).Click();
+
+        //// Valida o layout da tela
         Assert.That(driver.FindElement(By.CssSelector("h1")).Text, Is.EqualTo("Envie uma mensagem"));
         Assert.IsTrue(IsElementPresent(By.Name("your-name")));
         Assert.IsTrue(IsElementPresent(By.Name("your-email")));
